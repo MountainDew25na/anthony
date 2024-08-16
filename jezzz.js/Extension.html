@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="pass">Last name:</label><br>
+        <input id="pass" type="password" name="pass"><br>
+        <button type="submit" onclick="NextPage(event)">Submit</button>
+    </form>
+
+    <script>
+        function NextPage(event) {
+            event.preventDefault(); // Prevent form submission
+            window.location.href = 'IMBA.html'; // Replace with your next page
+        }
+    </script>
+</body>
+</html>
